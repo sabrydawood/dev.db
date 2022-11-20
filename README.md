@@ -1,17 +1,18 @@
-<div align="center">
-  <h1>VirusDB</h1>
-  <p>
-    <a href="https://www.npmjs.com/package/dev.db"><img src="https://img.shields.io/npm/v/dev.db.svg?color=3884FF&label=version" alt="Version" /></a>
-    <a href="https://www.npmjs.com/package/dev.db"><img src="https://img.shields.io/npm/dt/dev.db.svg?color=3884FF" alt="Downloads" /></a>
-    <a href="https://www.npmjs.com/package/dev.db"><img src="https://img.shields.io/badge/dependencies-0-brightgreen?color=3884FF" alt="Dependencies" /></a>
-    <a href="https://packagequality.com/#?package=dev.db"><img src="https://packagequality.com/shield/dev.db.svg?color=3dd164" alt="Quality" /></a>
-  </p>
-  <br><br>
-</div>
+
+  #VirusDB
+	
+[![Version](https://img.shields.io/npm/v/dev.db.svg?color=3884FF&label=version)](https://www.npmjs.com/package/dev.db)
+
+[![Downloads](https://img.shields.io/npm/dt/dev.db.svg?color=3884FF)](https://www.npmjs.com/package/dev.db)
+
+[![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen?color=3884FF)](https://www.npmjs.com/package/dev.db)
+
+[![Quality](https://packagequality.com/shield/dev.db.svg?color=3dd164)](https://packagequality.com/#?package=dev.db)
+
 
 A lightweight, 0 dependency, easy-to-use local database using JSON to store data.
 
-- **[Documentation](https://dev.gitbook.io/docs/)**
+- **[Documentation](https://clony.vercel.app)**
 - **[Yarn Package](https://yarnpkg.com/package/dev.db)**
 - **[NPM Package](https://npmjs.com/package/dev.db)**
 - **[NPM Package Statistics](https://npm-stat.com/charts.html?package=dev.db&from=2021-05-07)**
@@ -28,7 +29,7 @@ pnpm add dev.db
 Example Usage
 -------------
 
-<h3>Database</h3>
+### JsonDatabase
 
 ```js
 const VirusDB = require('dev.db');
@@ -51,7 +52,7 @@ db.get('person.job'); // undefined
 db.toJSON(); // { money: 100, person: { name: 'virus' } }
 ```
 
-<h3>Collections</h3>
+### JsonCollections
 
 ```js
 const dbConfig =  {
@@ -84,10 +85,10 @@ Users.get(user => user.name === 'virus'); // { name: 'virus', age: 20 }
 Users.getMany(user => user.age > 18); // [{ name: 'virus', age: 20 }, { name: 'virus24', age: 19 }]
 ```
 
-<p>With TypeScript:</p>
+### With TypeScript:
 
 ```ts
-import { Database, Modifiable } from 'dev.db';
+import { JsonDatabase, Modifiable } from 'dev.db';
 const dbConfig =  {
   autoSave: false,
   encryptionKey: 'qwertyuiopasdfghjkpzxxcvbnm',
@@ -95,7 +96,7 @@ const dbConfig =  {
   collectionsFolder: 'database/collections'
 }
 
-const db = new Database(dbConfig);
+const db = new JsonDatabase(dbConfig);
 
 type User = {
   name: string
