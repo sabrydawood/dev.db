@@ -1,0 +1,22 @@
+node_modules
+package-lock.json
+index.ts
+
+# Development
+tsconfig.json
+
+# Jest
+coverage
+jest.config.js
+
+# Tests
+tests
+
+# Husky
+.husky
+
+# ESLint
+.eslintrc.json
+
+# VS Code
+.vscode
