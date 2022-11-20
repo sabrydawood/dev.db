@@ -1,6 +1,6 @@
 {
   "name": "dev.db",
-  "version": "0.0.2",
+  "version": "0.0.2-fix",
   "description": "A lightweight, 0 dependency, easy-to-use local database using JSON to store data",
   "license": "MIT",
   "author": "virus24",
