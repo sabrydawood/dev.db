@@ -220,7 +220,7 @@ declare namespace VirusDB {
   /**
    * Collection where data is stored separately from the main data, in a different file.
    */
-  export class Collection<T> {
+  export class JsonCollection<T> {
     #config: CollectionConfig;
     #data: T[];
     #defaultValues: DefaultValues<T>;
@@ -376,4 +376,4 @@ declare namespace VirusDB {
   }
 }
 
-export = SimplDB;
+export = VirusDB;
