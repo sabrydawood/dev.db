@@ -23,7 +23,6 @@ Installation
 ```sh-session
 npm install dev.db
 yarn add dev.db
-pnpm add dev.db
 ```
 
 Example Usage
