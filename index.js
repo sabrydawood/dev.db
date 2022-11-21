@@ -5,7 +5,7 @@ const JsonCollection = require('./lib/JsonCollection');
 
 
 
-function VirusDB(config) { return new JsonData(config); }
+function VirusDB(config) { return new JsonDatabase(config); }
 
 VirusDB.JsonCollection = JsonCollection;
 VirusDB.JsonDatabase = JsonDatabase;
