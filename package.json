@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/virgel1995/dev.db/issues"
   },
-  "homepage": "https://github.com/virgel1995/dev.db",
+  "homepage": "clony.vercel.app/doc/dev.db",
   "devDependencies": {
     "@types/node": "^18.7.13",
     "eslint": "^8.12.0",
@@ -43,7 +43,9 @@
     "typescript": "^4.7.4"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+		"yarn": ">=1.0.0",
+		"npm": ">=8.0.0"
   },
   "scripts": {
     "test": "jest",
